@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ClassName__c</fullName>
+    <defaultValue>&apos;Not Populated&apos;</defaultValue>
+    <description>This field holds the Name of the class logging the error. This field is populated by the &apos;HandleCustomException&apos; Class or the &apos;Sub: Error Log&apos; (SubFlowErrorLogging) sub-Flow. This field&apos;s FLS is not assigned to any profile by default. Assign the user the &apos;View Error Log Permission&apos; Permission Set in order to provide access.</description>
+    <externalId>false</externalId>
+    <label>ClassName</label>
+    <length>255</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
