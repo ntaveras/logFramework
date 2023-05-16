@@ -32,9 +32,12 @@ public class HandleCustomException extends Exception {
                 exc.StackTrace__c 				= e.getStackTraceString();
                 exc.MethodName__c				= methodName;
                 exc.ClassName__c 				= className;
+            	exc.OwnerId						= UserInfo.getUserId();
                 database.insert(exc);            
         } 
         finally{
         }            
-    } 
+    }
+    
+    
 }
