@@ -292,13 +292,13 @@ Trigger order is set to the 100 in an attempt to make this flow be the last one 
     <status>Active</status>
     <textTemplates>
         <name>newCustomExcepitonBellNotification_AdminGroup</name>
-        <isViewedAsPlainText>false</isViewedAsPlainText>
-        <text>&lt;p&gt;View details {!recordLink}.&lt;/p&gt;</text>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Click this notification to view more details.</text>
     </textTemplates>
     <textTemplates>
         <name>newCustomExcepitonTitleBellNotification_AdminGroup</name>
-        <isViewedAsPlainText>false</isViewedAsPlainText>
-        <text>&lt;p&gt;A new {!$Record.RecordType.Name} exception has just occurred to {!$Record.Owner:User.Name}.&lt;/p&gt;</text>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>A new {!$Record.RecordType.Name} exception has just occurred to {!$User.FirstName} {!$User.LastName}.</text>
     </textTemplates>
     <triggerOrder>100</triggerOrder>
     <variables>
